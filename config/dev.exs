@@ -51,8 +51,6 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :choo_choo_choose, ChooChooChoose.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
   database: "choo_choo_choose_dev",
   hostname: "localhost",
   pool_size: 10

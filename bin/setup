@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+
+set -e
+
+echo "Removing previous build artifacts"
+rm -rf deps _build
+
+echo "Installing dependencies and compiling"
+mix local.hex --force
+mix deps.get
+mix deps.compile
+mix compile
+npm install
+
+echo "Setting up the database"
+mix ecto.drop
+mix ecto.create
+mix ecto.migrate
+mix run priv/repo/seeds.exs

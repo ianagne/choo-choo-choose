@@ -37,7 +37,7 @@ config :choo_choo_choose, ChooChooChooseWeb.Endpoint,
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
       ~r{lib/choo_choo_choose_web/views/.*(ex)$},
-      ~r{lib/choo_choo_choose_web/templates/.*(eex)$}
+      ~r{lib/choo_choo_choose_web/templates/.*(eex|slim|slime)$}
     ]
   ]
 

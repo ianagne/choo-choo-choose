@@ -11,3 +11,14 @@
 # and so on) as they will fail if something goes wrong.
 
 alias ChooChooChoose.Repo
+alias ChooChooChoose.Train
+
+trains = File.stream!("trains.csv") |>
+  CSV.decode
+
+for train <- trains do
+  {_, [name]} = train
+  changeset = Train.changeset(%Train{}, %{name: name})
+  Repo.insert!(changeset)
+end
+

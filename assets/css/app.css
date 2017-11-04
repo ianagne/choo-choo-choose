@@ -1,1 +1,21 @@
 /* This file is for your main application css. */
+
+body {
+  color: #eee;
+  background-color: #C85243;
+}
+
+.button {
+  background-color: #eee;
+  border-radius: 3px;
+  color: #C85243;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+}
+

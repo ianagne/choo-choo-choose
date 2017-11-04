@@ -16,7 +16,7 @@ defmodule ChooChooChooseWeb.Router do
   scope "/", ChooChooChooseWeb do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
+    get "/", HomeController, :index
     get "/choose", ChooseController, :show
   end
 

@@ -1,1 +1,2 @@
-= link("Choose a train", to: choose_path(@conn, :show), class: "button")
+.train
+  = link("Choose a train", to: choose_path(@conn, :show), class: "button")

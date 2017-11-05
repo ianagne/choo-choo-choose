@@ -1,4 +1,3 @@
-h2
-  = @train.name
-
-= link("Choose a different train", to: choose_path(@conn, :show), class: "button")
+.train
+  h2 = @train.name
+  = link("Re-roll", to: choose_path(@conn, :show), class: "button")

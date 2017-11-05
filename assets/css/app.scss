@@ -5,6 +5,7 @@ $red-orange: #C85243;
 
 $small-spacing: 0.75em;
 $base-spacing: 1.5em;
+$large-spacing: 3.75em;
 $base-border-radius: 3px;
 
 body {
@@ -26,3 +27,42 @@ body {
   vertical-align: middle;
 }
 
+.header {
+  display: inline-block;
+  margin-top: $large-spacing;
+  text-align: center;
+  width: 100%;
+}
+
+.header__logo {
+  display: inline-block;
+  margin-bottom: $small-spacing;
+  vertical-align: bottom;
+}
+
+.header__title {
+  display: inline-block;
+  margin-left: $base-spacing;
+}
+
+.train {
+  display: inline-block;
+  width: 100%;
+
+  h2 {
+    display: block;
+    border: 1px solid $light-grey;
+    border-radius: $base-border-radius;
+    margin: 0 auto;
+    padding: $small-spacing;
+    text-align: center;
+    max-width: 15em;
+  }
+
+  a {
+    display: block;
+    margin: $base-spacing auto;
+    padding: $small-spacing;
+    max-width: 23.5em;
+  }
+}

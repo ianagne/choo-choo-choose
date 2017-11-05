@@ -1,0 +1,21 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    meta content="" name="description"
+    meta content="" name="author"
+    title Choo Choo Choose!
+    link rel="stylesheet" href=static_path(@conn,"/css/app.css")
+
+  body
+    .header
+      .header__logo
+        = img_tag(static_path(@conn, "/images/train.svg"), alt: "train logo")
+      .header__title
+        h1 Choo Choo Choose
+    main role="main"
+      = render @view_module, @view_template, assigns
+
+    script src=static_path(@conn,"/js/app.js")

@@ -1,20 +1,26 @@
 # ChooChooChoose
 
-To start your Phoenix server:
+This application is meant to randomly select a US passenger train name out of a
+list of approximately 700 trains.
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-  * Install Node.js dependencies with `cd assets && npm install`
-  * Start Phoenix endpoint with `mix phx.server`
+Why?
+
+Well, we've decided to start following Basecamp's [six week work
+cycle](https://basecamp.com/help/3/guides/how-we-work/six-week-cycle) at TSC
+Advantage.  Basecamp names their work cycles after mountains and we, as a team,
+thought that it would be fun to name ours after passenger trains.  We're doing
+this for no other reason than it brings us joy.
+
+# Getting started
+
+After cloning the repo, run the following command to install the necessary
+dependencies:
+
+    % ./bin/setup
+
+After install dependencies, start the server:
+
+    % mix phx.server
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix

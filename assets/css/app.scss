@@ -1,0 +1,28 @@
+/* This file is for your main application css. */
+
+$light-grey: #eee;
+$red-orange: #C85243;
+
+$small-spacing: 0.75em;
+$base-spacing: 1.5em;
+$base-border-radius: 3px;
+
+body {
+  color: $light-grey;
+  background-color: $red-orange;
+}
+
+.button {
+  background-color: $light-grey;
+  border-radius: $base-border-radius;
+  color: darken($red-orange, 15);
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  padding: $small-spacing $base-spacing;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
